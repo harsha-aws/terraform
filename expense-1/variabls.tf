@@ -1,22 +1,13 @@
-
 variable "instance_names" {
-    type = list(string)
-    default = ["mysql", "backend", "frontend"]
-}
-
-variable "common_tags" {
-    type = map
-    default = {
-        Project = "expense"
-        Environment = "dev"
-        Terraform = "true"
-    }
-}
-
-variable "zone_id" {
-    default = "Z09912121MS725XSKH1TG"
+  type        = list(string)
+  default     = ["mysql", "backend", "frontend"]
+  description = "description"
 }
 
 variable "domain_name" {
-    default = "daws81s.online"
+  default = "daws81s.online"
+}
+
+variable "zone_id" {
+  default = "Z07721302HYF0SM8N34I3"
 }
